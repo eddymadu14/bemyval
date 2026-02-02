@@ -25,8 +25,8 @@ export default function ValentinePremium() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-700 to-purple-900 flex items-center justify-center p-6">
-      <div className="bg-white/20 backdrop-blur-lg border border-white/30 rounded-3xl p-10 max-w-md w-full text-center shadow-2xl relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-pink-500 to-pink-400 flex items-center justify-center p-6">
+      <div className="bg-white/10 backdrop-blur-lg border border-white/30 rounded-3xl p-10 max-w-md w-full text-center shadow-2xl relative overflow-hidden">
         {!yes ? (
           <>
             <h1 className="text-4xl font-extrabold text-white mb-4">
@@ -65,7 +65,7 @@ export default function ValentinePremium() {
                 onMouseEnter={moveNo}
                 onTouchStart={moveNo}
                 style={pos}
-                className="absolute bg-white/30 hover:bg-white/40 px-5 py-2 rounded-full text-sm text-white transition"
+                className="absolute bg-white/80 hover:bg-white/20 px-5 py-2 rounded-full text-sm text-black transition"
               >
                 No 🙃
               </button>

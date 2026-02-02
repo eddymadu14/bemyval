@@ -24,7 +24,7 @@ export default function ValentineMid() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center p-6">
+    <div className="min-h-screen bg-gradient-to-br from-pink-400 to-rose-400 flex items-center justify-center p-6">
       <div className="bg-white rounded-2xl p-8 max-w-md w-full text-center shadow-xl relative overflow-hidden">
         {!yes ? (
           <>

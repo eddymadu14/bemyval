@@ -15,7 +15,7 @@ function AppRoutes() {
      <Route path="/val" element={<Valentine />} />
 
       
-      <Route path="/" element={<LandingPage />} />
+      <Route path="/" element={<Valentine />} />
       
       
          {/* <Route path="verify-success" element={< VerifyEmailSuccess />} />

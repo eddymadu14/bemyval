@@ -4,6 +4,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Valentine from "./pages/basic";
 import Home from "./pages/sales";
 import Create from "./pages/create";
+import CreateMid from "./pages/createmid";
+import CreatePremium from "./pages/createpremium";
+
 import ValentineMid from "./pages/mid";
 import ValentinePremium from "./pages/premium";
 
@@ -20,6 +23,9 @@ function AppRoutes() {
       <Route path="/basic" element={<Valentine/>} />
       <Route path="/love" element={<Home />} />
       <Route path="/create" element={<Create />} />
+            <Route path="/createmid" element={<CreateMid />} />
+      <Route path="/createpremium" element={<CreatePremium />} />
+
             <Route path="/mid" element={<ValentineMid />} />
                   <Route path="/premium" element={<ValentinePremium />} />
 

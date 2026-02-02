@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Valentine from "./pages/basic";
 import Home from "./pages/sales";
 import Create from "./pages/create";

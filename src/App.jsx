@@ -1,54 +1,34 @@
-
 import React from "react";
-//import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { HashRouter as Router } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Valentine from "./pages/basic";
 import Home from "./pages/sales";
 import Create from "./pages/create";
 import CreateMid from "./pages/createmid";
 import CreatePremium from "./pages/createpremium";
-
 import ValentineMid from "./pages/mid";
 import ValentinePremium from "./pages/premium";
-
-
-
-
-
 
 function AppRoutes() {
   return (
     <Routes>
       {/* Public routes */}
-      
-      <Route path="/basic" element={<Valentine/>} />
+      <Route path="/" element={<Valentine />} />
+      <Route path="/basic" element={<Valentine />} />
       <Route path="/love" element={<Home />} />
       <Route path="/create" element={<Create />} />
-            <Route path="/createmid" element={<CreateMid />} />
+      <Route path="/createmid" element={<CreateMid />} />
       <Route path="/createpremium" element={<CreatePremium />} />
-
-            <Route path="/mid" element={<ValentineMid />} />
-                  <Route path="/premium" element={<ValentinePremium />} />
-      
-      <Route path="/" element={<Valentine />} />
-      
-      
-         {/* <Route path="verify-success" element={< VerifyEmailSuccess />} />
-         <Route path="verify-failed" element={< VerifyEmailFailed />} />    
-
-     */}
-    
+      <Route path="/mid" element={<ValentineMid />} />
+      <Route path="/premium" element={<ValentinePremium />} />
     </Routes>
   );
 }
 
 function App() {
   return (
- 
-      <Router>
-        <AppRoutes />
-      </Router>
-
+    <Router>
+      <AppRoutes />
+    </Router>
   );
 }
 

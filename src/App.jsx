@@ -1,6 +1,7 @@
 
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+//import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 import Valentine from "./pages/basic";
 import Home from "./pages/sales";
 import Create from "./pages/create";
@@ -28,11 +29,6 @@ function AppRoutes() {
 
             <Route path="/mid" element={<ValentineMid />} />
                   <Route path="/premium" element={<ValentinePremium />} />
-
-
-
-
-
       
       <Route path="/" element={<Valentine />} />
       

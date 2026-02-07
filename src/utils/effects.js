@@ -13,6 +13,21 @@ export function spawnFlowers(count = 20) {
   }
 }
 
+export function launchFireworks(count = 20) {
+  for (let i = 0; i < count; i++) {
+    const flower = document.createElement("div");
+    flower.innerText = "🌸";
+    flower.style.position = "fixed";
+    flower.style.left = Math.random() * 100 + "vw";
+    flower.style.top = "100vh";
+    flower.style.fontSize = Math.random() * 24 + 16 + "px";
+    flower.style.animation = "floatUp 3s ease-out forwards";
+    document.body.appendChild(flower);
+    setTimeout(() => flower.remove(), 3000);
+  }
+}
+
+
 export function spawnPremiumEffects() {
   spawnFlowers(40);
 

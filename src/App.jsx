@@ -7,6 +7,12 @@ import CreateMid from "./pages/createmid";
 import CreatePremium from "./pages/createpremium";
 import ValentineMid from "./pages/mid";
 import ValentinePremium from "./pages/premium";
+import ValentinePrem from "./pages/premiumpage";
+import ValentineMedium from "./pages/midpage";
+import ValentineStandard from "./pages/standardpage";
+
+
+
 
 function AppRoutes() {
   return (
@@ -20,6 +26,12 @@ function AppRoutes() {
       <Route path="/createpremium" element={<CreatePremium />} />
       <Route path="/mid" element={<ValentineMid />} />
       <Route path="/premium" element={<ValentinePremium />} />
+            <Route path="/standard" element={<ValentineStandard />} />
+                  <Route path="/medium" element={<ValentineMedium />} />
+                        <Route path="/prem" element={<ValentinePrem />} />
+
+
+
     </Routes>
   );
 }
